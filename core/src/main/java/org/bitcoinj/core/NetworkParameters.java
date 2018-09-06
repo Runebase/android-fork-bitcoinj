@@ -59,13 +59,18 @@ public abstract class NetworkParameters {
     public static final String ID_REGTEST = "org.bitcoin.regtest";
     /** Unit test network. */
     public static final String ID_UNITTESTNET = "org.bitcoinj.unittest";
-	 /** The string returned by getId() for the Qtum mainnet. */
+    /** The string returned by getId() for the Qtum mainnet. */
     public static final String ID_QTUM_MAINNET = "org.bitcoinj.qtum_mainnet";
 
     /** The string returned by getId() for the Qtum mainnet. */
     public static final String ID_QTUM_TESTNET = "org.bitcoinj.qtum_testnet";
 	
-	/** The string returned by getId() for the WhiteCoin netparams. */
+    /** The string returned by getId() for the Runebase mainnet. */
+    public static final String ID_RUNEBASE_MAINNET = "org.bitcoinj.runebase_mainnet";
+    /** The string returned by getId() for the Runebase mainnet. */
+    public static final String ID_RUNEBASE_TESTNET = "org.bitcoinj.runebase_testnet";
+	
+    /** The string returned by getId() for the WhiteCoin netparams. */
     public static final String ID_WHITECOIN_NET = "org.bitcoinj.whitecoin_net";
 
     /** The string used by the payment protocol to represent the main net. */
@@ -236,9 +241,13 @@ public abstract class NetworkParameters {
             return QtumMainNetParams.get();
         } else if (id.equals(ID_QTUM_TESTNET)) {
             return QtumTestNetParams.get();
+        } else if (id.equals(ID_RUNEBASE_MAINNET)) {
+            return RunebaseMainNetParams.get();
+        } else if (id.equals(ID_RUNEBASE_TESTNET)) {
+            return RunebaseTestNetParams.get();
         } else if(id.equals(ID_WHITECOIN_NET)){
-			return WhiteCoinNetParams.get();
-		}else{
+	    return WhiteCoinNetParams.get();
+	} else{
             return null;
         }
     }
