@@ -19,14 +19,14 @@ public class RunebaseTestNetParams extends AbstractBitcoinNetParams {
         interval = INTERVAL;
         targetTimespan = TARGET_TIMESPAN;
         maxTarget = Utils.decodeCompactBits(0x1d00ffffL);
-        dumpedPrivateKeyHeader = 239;
-        addressHeader = 120;
-        p2shHeader = 110;
+        dumpedPrivateKeyHeader = 202;
+        addressHeader = 113;
+        p2shHeader = 123;
         acceptableAddressCodes = new int[] { addressHeader, p2shHeader };
         port = 8333;
         packetMagic = 0xf9beb4d9L;
-        bip32HeaderPub = 0x0488B21E; //The 4 byte header that serializes in base58 to "xpub".
-        bip32HeaderPriv = 0x0488ADE4; //The 4 byte header that serializes in base58 to "xprv"
+        bip32HeaderPub = 0x053781AB; //The 4 byte header that serializes in base58 to "xpub".
+        bip32HeaderPriv = 0x0537852C; //The 4 byte header that serializes in base58 to "xprv"
 
         majorityEnforceBlockUpgrade = MAINNET_MAJORITY_ENFORCE_BLOCK_UPGRADE;
         majorityRejectBlockOutdated = MAINNET_MAJORITY_REJECT_BLOCK_OUTDATED;
