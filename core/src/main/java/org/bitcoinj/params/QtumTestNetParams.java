@@ -25,8 +25,8 @@ public class QtumTestNetParams extends AbstractBitcoinNetParams {
         acceptableAddressCodes = new int[] { addressHeader, p2shHeader };
         port = 8333;
         packetMagic = 0xf9beb4d9L;
-        bip32HeaderPub = 0x053781AB; //The 4 byte header that serializes in base58 to "xpub".
-        bip32HeaderPriv = 0x0537852C; //The 4 byte header that serializes in base58 to "xprv"
+        bip32HeaderPub = 0x053782BF; //The 4 byte header that serializes in base58 to "xpub".
+        bip32HeaderPriv = 0x053784A4; //The 4 byte header that serializes in base58 to "xprv"
 
         majorityEnforceBlockUpgrade = MAINNET_MAJORITY_ENFORCE_BLOCK_UPGRADE;
         majorityRejectBlockOutdated = MAINNET_MAJORITY_REJECT_BLOCK_OUTDATED;
