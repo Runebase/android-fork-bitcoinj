@@ -19,9 +19,9 @@ public class QtumTestNetParams extends AbstractBitcoinNetParams {
         interval = INTERVAL;
         targetTimespan = TARGET_TIMESPAN;
         maxTarget = Utils.decodeCompactBits(0x1d00ffffL);
-        dumpedPrivateKeyHeader = 202;
-        addressHeader = 113;
-        p2shHeader = 123;
+        dumpedPrivateKeyHeader = 229;
+        addressHeader = 11;
+        p2shHeader = 106;
         acceptableAddressCodes = new int[] { addressHeader, p2shHeader };
         port = 8333;
         packetMagic = 0xf9beb4d9L;
