@@ -23,7 +23,7 @@ public class RunebaseMainNetParams extends AbstractBitcoinNetParams {
         p2shHeader = 123;
         acceptableAddressCodes = new int[] { addressHeader, p2shHeader };
         port = 8333;
-        packetMagic = 0xf9beb4d9L;
+        packetMagic = 0xcff1d3a6L;
         bip32HeaderPub = 0x0586C22E; //The 4 byte header that serializes in base58 to "xpub".
         bip32HeaderPriv = 0x0586DCF1; //The 4 byte header that serializes in base58 to "xprv"
 
