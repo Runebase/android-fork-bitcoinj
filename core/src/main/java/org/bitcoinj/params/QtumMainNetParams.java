@@ -19,7 +19,7 @@ public class QtumMainNetParams extends AbstractBitcoinNetParams {
         targetTimespan = TARGET_TIMESPAN;
         maxTarget = Utils.decodeCompactBits(0x1d00ffffL);
         dumpedPrivateKeyHeader = 216;
-        addressHeader = 60;
+        addressHeader = 61;
         p2shHeader = 123;
         acceptableAddressCodes = new int[] { addressHeader, p2shHeader };
         port = 8333;
